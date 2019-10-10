@@ -1,0 +1,255 @@
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+  background: url("../../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	/*background-color: grey;*/
+	text-align: center;
+  min-width: 360px;
+
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../../fonts/comic_andy.ttf');
+  src: local('☺'), 
+      
+  url('../../fonts/comic_andy.ttf') format('truetype'), 
+  url('../../fonts/comic_andy.svg#font') format('svg'); /* iOS */
+}
+.panel {
+  margin-top: 10px;
+}
+
+#logo {
+	font-family: "myFirstFont";
+	font-size: 65px;
+	padding: 60px 0px 0px 0px;
+	text-align: center;
+}
+
+
+#logo-img{
+	margin: 10px 0px 0px 0px;
+	width: 200px; 
+	height: auto;
+}
+
+.main-panel{
+	align-self: center;
+}
+
+.form-inline .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/********* table ********/
+.main {
+  position :relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.last {
+  margin-bottom: 100px;
+}
+.container {
+  margin-bottom: 100px;
+}
+th,td {
+	text-align: center;
+}
+/********* panel  ********/
+
+.panel-transparent {
+  background: none;
+}
+
+.panel-transparent .panel-heading{
+ background: rgba(122, 130, 136, 0.2)!important;
+  
+}
+
+.panel-transparent .panel-body{
+  background: rgba(211, 211, 211, 0.8)!important;
+  color: white;
+}
+
+.message {
+  padding-bottom: 300px;
+}
+
+/********* signup ********/
+.centered-form{
+	margin-top: 10px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.bottom-space {
+  margin-bottom: 30px;
+} 
+.m-playground {
+  /*width: 300px;*/
+  
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+  margin-bottom: 100px
+  /*margin-right: auto;
+  margin-left: auto;*/
+
+}
+
+.back-btn{
+  margin-top: 10px;
+}
+.q-title {
+  margin-bottom: 15px;
+  background: #eeeeee;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  /*color: #fff;
+    background-color: #428bca;*/
+}    
+thead tr th{
+  background: #eeeeee;
+}
+
+.q-title h3,h4 {
+
+  margin-top: 10px;
+}
+
+#msg-div {
+  
+  margin: 10px;
+}
+
+#msg {
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+.red-msg {
+  color: red;
+}
+
+.green-msg {
+  color: green;
+}
+
+.notf { 
+  border-color: #428bca
+}
+.notf-title {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca
+}
+
+/*.left {
+  
+  left :-10px;
+}
+
+.right {
+  
+  right :10px;
+}*/
+/********* footer ********/
+footer{
+	
+  background-color:rgba(0,0,0,.8);
+  position: center bottom;
+	border-radius: 5px;
+  text-align: center;
+	
+	margin-top: 30px;
+  padding: 5px;
+  color: white;
+
+}
+
+/***** colapsed table columns to rows *****/
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
+
+
+.btn-back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    /*visibility: hidden;*/
+}
+
+tbody tr:nth-of-type(odd) { background: #D3D3D3; }
+tbody tr:nth-of-type(even) { background: #C0C0C0; }
